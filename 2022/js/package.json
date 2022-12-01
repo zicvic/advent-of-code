@@ -1,0 +1,23 @@
+{
+  "name": "aoc-2022",
+  "version": "1.0.0",
+  "description": "Advent of Code 2022",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zicvic/advent-of-code.git"
+  },
+  "keywords": [
+    "advent-of-code"
+  ],
+  "author": "Victor Miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zicvic/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/zicvic/advent-of-code#readme"
+}
