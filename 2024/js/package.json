@@ -4,7 +4,9 @@
   "description": "Advent of Code - 2024",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "12": "node 12/solver.js",
+    "13": "node 13/solver.js"
   },
   "repository": {
     "type": "git",
