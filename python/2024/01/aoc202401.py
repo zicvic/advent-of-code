@@ -35,6 +35,18 @@ def part1(data):
 
 def part2(data):
     """Solve part 2."""
+    left, right = sort_data(data)
+    similarty = []
+    
+    for l in left:
+        count = 0
+        for r in right:
+            if l == r:
+                count += 1
+        similarty.append(l * count)
+    
+    
+    return sum(similarty)
 
 
 def solve(puzzle_input):
