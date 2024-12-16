@@ -7,10 +7,22 @@ import sys
 
 def parse_data(puzzle_input):
     """Parse input."""
+    lines = puzzle_input.splitlines()
+    data = []
+    for line in lines:
+        values = list(map(int, line.split()))
+        data.append(values)
+    return data
 
 
 def part1(data):
     """Solve part 1."""
+    safe_count = 0
+    
+    for report in [[line[i+1] - line[i] for i in range(len(line)-1)] for line in data]:
+        if all(1 <= abs(x) <= 3 for x in report) and (all(x > 0 for x in report) or all(x < 0 for x in report)):
+            safe_count += 1
+    return safe_count
 
 
 def part2(data):
