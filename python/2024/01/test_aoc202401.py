@@ -22,16 +22,19 @@ def example2():
     return aoc202401.parse_data(puzzle_input)
 
 
-@pytest.mark.skip(reason="Not implemented")
 def test_parse_example1(example1):
     """Test that input is parsed properly."""
-    assert example1 == ...
+    assert example1 == [[3, 4, 2, 1, 3, 3], [4, 3, 5, 3, 9, 3]]
+    assert type(example1[0][0]) == int
 
 
-@pytest.mark.skip(reason="Not implemented")
+def test_sort_data(example1):
+    """Test that data is sorted properly."""
+    assert aoc202401.sort_data(example1) == ([1, 2, 3, 3, 3, 4], [3, 3, 3, 4, 5, 9])
+
 def test_part1_example1(example1):
     """Test part 1 on example input."""
-    assert aoc202401.part1(example1) == ...
+    assert aoc202401.part1(example1) == 11
 
 
 @pytest.mark.skip(reason="Not implemented")
